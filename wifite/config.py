@@ -104,9 +104,9 @@ class Configuration(object):
         cls.wps_filter  = False  # Only attack WPS networks
         cls.no_wps      = False  # Do not use WPS attacks (Pixie-Dust & PIN attacks)
         cls.wps_only    = False  # ONLY use WPS attacks on non-WEP networks
-        cls.use_bully   = False  # Use bully instead of reaver
+        cls.use_bully   = True  # Use bully instead of reaver
         cls.wps_pixie   = True
-        cls.wps_pin     = True
+        cls.wps_pin     = False
         cls.wps_ignore_lock = False  # Skip WPS PIN attack if AP is locked.
         cls.wps_pixie_timeout = 300      # Seconds to wait for PIN before WPS Pixie attack fails
         cls.wps_fail_threshold = 100     # Max number of failures
